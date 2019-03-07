@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bientôt vieux</title>
+</head>
+<body>
+    <h2>Exercices03 Variables</h2>
+    <h3>Bientôt vieux</h3>
+
+    <p>Déclarez les variables suivantes : <br>
+        * Votre âge <br>
+        * Un âge maximum, esperons tous vivre 100ans <br>
+        * Une denrée alimentaire <br>
+        * Votre consomation de cette denrée par jour <br>
+
+        Calculer le nombre de fois que vous en mangerez pour le restant de votre vie. <br>
+
+        Mettez le resultat dans la console comme ceci : <br>
+
+        `Il vous reste N de X avant d'ateindre l'age de Y ans"`
+    </p>
+
+    <script>
+    //declarer les variables
+    var age = 27;
+    var ageMax = 100;
+    var denree = "Burgers";
+    var consoJournaliere = 0.14;
+    var consoAnnuel = consoJournaliere* 365 ;
+    var resteDenree = ( ageMax-age) * consoAnnuel;
+    var resultat = "Il vous reste " + resteDenree + " de " + denree + " avant d'ateindre l'age de " + ageMax + " ans ";
+
+    //afficher le resultat dans la console
+    console.log(resultat);
+
+    </script>
+    <a href="../index.html"><input type="button" value="index"></a>
+</body>
+</html>
